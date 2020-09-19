@@ -62,7 +62,7 @@ All current moderators of this repository are Atlas staff members.
 * doddsy - node#2153
 * JaM3141 - JaM#8608
 * Cykreet - Cykreet#5758
+-----
+Community Action Repository and all actions by [Atlas and outlined action creators](https://atlasbot.xyz) is licensed under CC BY-NC-SA 4.0.
 
-
-Community Action Repository and all actions by [Atlas and outlined action creators](https://atlasbot.xyz) is licensed under CC BY-NC-SA 4.0.    
 [![](https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1)![](https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1)![](https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1)![](https://mirrors.creativecommons.org/presskit/icons/sa.svg?ref=chooser-v1)](https://creativecommons.org/licenses/by-nc-sa/4.0)
