@@ -1,3 +1,9 @@
+| You are free to                                            | Under the following terms                                                                                                                        |
+|------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------|
+| 🟢 **Share** - post your action however you like   | 🔴 **Attribution** - you must give credit to the author(s) of any actions or snippets you used to create your own action/snippet |
+| 🟢 **Adapt** - amend, build upon or entirely transform another action | 🔴 **Non-Commercial** - you are absolutely not allowed to sell or otherwise make money off of actions            |
+|                                                            | 🔴 **ShareAlike** - if you amend, build upon or transform another action, and you plan to publish or share it, you must share it under the same license (CC BY-NC-SA 4.0)               |
+
 ## Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International Public License
 
 By exercising the Licensed Rights (defined below), You accept and agree to be bound by the terms and conditions of this Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International Public License ("Public License"). To the extent this Public License may be interpreted as a contract, You are granted the Licensed Rights in consideration of Your acceptance of these terms and conditions, and the Licensor grants You such rights in consideration of benefits the Licensor receives from making the Licensed Material available under these terms and conditions.
