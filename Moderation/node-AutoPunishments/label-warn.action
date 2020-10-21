@@ -1,0 +1,32 @@
+{
+  "meta": "Exported from https://atlas.bot",
+  "flags": {
+    "ttl": 0,
+    "cooldown": 0,
+    "enabled": true,
+    "silent": false,
+    "delete": false,
+    "quiet": false
+  },
+  "restrictions": {
+    "mode": "blacklist",
+    "roles": [],
+    "channels": [],
+    "permissions": [
+      "manageMessages"
+    ]
+  },
+  "trigger": {
+    "type": "label",
+    "content": "warn"
+  },
+  "content": [
+    {
+      "fallback": true,
+      "type": "channel",
+      "message": "{set;punishment_throwaway_role_id;000000000000000000}\n\n{set;punishment_tier_1__minwarnings;1}\n{set;punishment_tier_1__punishment;kick}\n{set;punishment_tier_1__opts;}\n\n{set;punishment_tier_2__minwarnings;2}\n{set;punishment_tier_2__punishment;mute}\n{set;punishment_tier_2__opts;1d}\n\n{set;punishment_tier_3__minwarnings;3}\n{set;punishment_tier_3__punishment;tempban}\n{set;punishment_tier_3__opts;3d}\n\n{set;punishment_tier_4__minwarnings;4}\n{set;punishment_tier_4__punishment;ban}\n{set;punishment_tier_4__opts;}\n\n{note;\n\nDon't touch anything below here unless you know what you're doing\nCause I'm sure as shit not going to help you with it -node\n}\n\n{if;{find;{args;1};(view|remove)};\n    {a!warn;{args}};\n\n    {a!warn;{args}}\n    {if;{args;1};==;add;\n        {if;{args;3};{set;run;true}}\n        {set;user;{args;2}}\n        ;\n        {if;{args;2};{set;run;true}}\n        {set;user;{args;1}}\n    }\n    {if;{get;run};\n        {if;{user.id;{get;user}};!==;{user.id};\n            {if;{catch;{user.addrole;{get;punishment_throwaway_role_id};{get;user}}{user.removerole;{get;punishment_throwaway_role_id};{get;user}};Error};!==;Error;\n                {note;Tier 1}\n                {if;\n                    {user.infractions;{get;user}};==;{get;punishment_tier_1__minwarnings};\n                        {if;{get;punishment_tier_1__punishment};==;kick;{a!kick;{get;user}};\n                        {if;{get;punishment_tier_1__punishment};==;mute;{a!mute;{get;user};{get;punishment_tier_1__opts}};\n                        {if;{get;punishment_tier_1__punishment};==;tempban;{a!tempban;{get;user};{get;punishment_tier_1__opts}};\n                        {if;{get;punishment_tier_1__punishment};==;ban;{a!ban;{get;user};{get;punishment_tier_1__opts}}}}}}\n                ;\n                {note;Tier 2}\n                {if;\n                    {user.infractions;{get;user}};==;{get;punishment_tier_2__minwarnings};\n                        {if;{get;punishment_tier_2__punishment};==;kick;{a!kick;{get;user}};\n                        {if;{get;punishment_tier_2__punishment};==;mute;{a!mute;{get;user};{get;punishment_tier_2__opts}};\n                        {if;{get;punishment_tier_2__punishment};==;tempban;{a!tempban;{get;user};{get;punishment_tier_2__opts}};\n                        {if;{get;punishment_tier_2__punishment};==;ban;{a!ban;{get;user};{get;punishment_tier_2__opts}}}}}}\n                ;\n                {note;Tier 3}\n                {if;\n                    {user.infractions;{get;user}};==;{get;punishment_tier_3__minwarnings};\n                        {if;{get;punishment_tier_3__punishment};==;kick;{a!kick;{get;user}};\n                        {if;{get;punishment_tier_3__punishment};==;mute;{a!mute;{get;user};{get;punishment_tier_3__opts}};\n                        {if;{get;punishment_tier_3__punishment};==;tempban;{a!tempban;{get;user};{get;punishment_tier_3__opts}};\n                        {if;{get;punishment_tier_3__punishment};==;ban;{a!ban;{get;user};{get;punishment_tier_3__opts}}}}}}\n                ;\n                {note;Tier 4}\n                {if;\n                    {user.infractions;{get;user}};>=;{get;punishment_tier_4__minwarnings};\n                        {if;{get;punishment_tier_4__punishment};==;kick;{a!kick;{get;user}};\n                        {if;{get;punishment_tier_4__punishment};==;mute;{a!mute;{get;user};{get;punishment_tier_4__opts}};\n                        {if;{get;punishment_tier_4__punishment};==;tempban;{a!tempban;{get;user};{get;punishment_tier_4__opts}};\n                        {if;{get;punishment_tier_4__punishment};==;ban;{a!ban;{get;user};{get;punishment_tier_4__opts}}}}}}\n                }}}}\n            }\n        }\n    }\n}",
+      "id": "5f904de6fc1b82002db69d00"
+    }
+  ],
+  "formatVersion": "1.2"
+}
